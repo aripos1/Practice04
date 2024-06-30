@@ -8,8 +8,13 @@ public class Ex06 {
 			
 		System.out.println(c);
 		
-		if(char c==' ') {
+		for(int i = 0; i<c.length; i++) {
+			
+			if(c[i]==' ') {
+				c[i]=',';
+			}
 			
 		}
+		System.out.println(c);
 	}
 }
