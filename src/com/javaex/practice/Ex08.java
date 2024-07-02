@@ -4,23 +4,22 @@ public class Ex08 {
 
 	public static void main(String[] args) {
 
-		int[] numArr = new int[6];
-		boolean overlap = true;
-		for (int i = 0; i < numArr.length; i++) {
-			numArr[i] = (int) (Math.random() * 45) + 1;
+		int[] numArr01 = new int[6];
+		
 
-			for (int num = 0; num < i; num++) {
-				if (numArr[i] == numArr[num]) {
-					overlap  = true;
+		for (int i = 0; i < numArr01.length; i++) {
+			numArr01[i] = (int) (Math.random() * 45) + 1;
+
+			for (int a = 0; a < i; a++) {
+				 int newNum;
+
+				if (numArr01[i] == numArr01[a]) {
 					break;
 				}
-
-			}if(overlap =false) {
-				i--;
-				continue;
+				
 			}
-
-			System.out.println(numArr[i]);
+			System.out.println(numArr01[i]);
+			
 		}
 
 	}
